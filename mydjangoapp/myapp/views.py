@@ -13,12 +13,9 @@ def myform_view(request):
             return JsonResponse({"message": "No se ha seleccionado un archivo."})
 
         try:
-            # Envía la solicitud al backend de Flask con el archivo adjunto
             files = {"file": (file.name, file.read())}
             response = requests.post('http://127.0.0.1:5000/upload_file', data={"data": data}, files=files)
             response.raise_for_status()
-
-            # Procesa la respuesta del backend de Flask
             response_data = response.json()
             return JsonResponse(response_data)
         except requests.exceptions.RequestException as e:
@@ -43,3 +40,7 @@ def get_response_from_flask2(request):
         return JsonResponse(response_data)
     except requests.exceptions.RequestException as e:
         return HttpResponse(str(e), status=500)
+
+def pulpito_view(request):
+
+    return render(request, 'pulpito.html')
