@@ -17,9 +17,8 @@ def upload_file():
   file = request.files['file']
   file_contents=file.read().decode('utf-8')
   print(file_contents)
-  return jsonify({
-      "message": "El archivo fue cargado"
-    })  
+  reponse_data= {"message":"Archivo Procesado!!"}
+  return jsonify(reponse_data)  
 
 @app.route('/flask_response',methods=['GET'])
 def get_response_from_flask():

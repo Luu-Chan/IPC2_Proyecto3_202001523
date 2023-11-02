@@ -1,0 +1,14 @@
+img {
+    align-items: center;
+    border-style: solid;
+}
+
+div {
+    text-align: center;
+    align-items: center;
+}
+
+body {
+
+    background-color: rgba(141, 210, 210, 0.42);
+}
