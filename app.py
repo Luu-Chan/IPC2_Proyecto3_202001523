@@ -30,7 +30,6 @@ def get_response_from_flask():
 def get_response_from_flask2():
   global file_contents
   response_data={"message":file_contents}
-  print(file_contents)
   return jsonify(response_data)
 
 

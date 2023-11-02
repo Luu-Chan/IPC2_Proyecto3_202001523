@@ -1,64 +1,90 @@
-/* Estilo para el encabezado h1 */
+
+head{
+    background-color: aqua;
+    text-align: center;
+
+}
+
+body{
+    background-color: rgb(118, 75, 185);
+}
+
 h1 {
-    color: #333; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente */
-    text-align: center; /* Alineación del texto */
+    color: #333; 
+    font-size: 24px; 
+    text-align: center; 
 }
 
-/* Estilo para el formulario */
+
 #myForm {
-    margin: 20px auto; /* Margen superior e inferior, centrado en la página */
-    width: 300px; /* Ancho del formulario */
+    margin: 20px auto; 
+    width: 300px; 
 }
 
-/* Estilo para el botón de envío */
+
 #submitButton {
-    background-color: #0074d9; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Relleno (padding) interior */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    background-color: #0074d9; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
 }
 
-/* Estilo para el contenedor de respuesta */
+
 #response {
-    margin: 20px auto; /* Margen superior e inferior, centrado en la página */
-    width: 300px; /* Ancho del contenedor */
-    text-align: center; /* Alineación del texto */
+    align-items: center;
+    margin: 20px auto; 
+    width: 300px; 
+    text-align: center; 
 }
 
-/* Estilo para el botón de obtención de respuesta */
+#response2 {
+    align-items: center;
+    margin: 20px auto; 
+    width: 300px; 
+    text-align: center; 
+}
+
+
 #getResponseButton {
-    background-color: #333; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Relleno (padding) interior */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    background-color: #333;
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
 }
 
-/* Estilo para el enlace */
+
 a {
-    text-decoration: none; /* Sin subrayado en el enlace */
+    text-decoration: none; 
 }
 
-/* Estilo para el botón de mostrar imagen */
+
 #mostrarImagenButton {
-    background-color: #333; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Relleno (padding) interior */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
 }
 
-/* Estilo para la imagen mostrada */
 #imagenMostrada {
-    display: none; /* Ocultar la imagen inicialmente */
-    margin: 20px auto; /* Margen superior e inferior, centrado en la página */
-    max-width: 100%; /* Ancho máximo de la imagen */
-    height: auto; /* Altura automática de la imagen */
+    display: none; 
+    margin: 20px auto; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 div {
     background-color: rgba(171, 243, 251, 0.423);
     text-align: center;
 }
+
+button{
+    text-align: center;
+    background-color: #0074d9; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+

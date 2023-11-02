@@ -9,25 +9,25 @@
     <h1>Proyecto 3 - Procesador de archivos</h1>
     <form method="POST" id="myForm" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="file" id="fileInput" name="file" accept=".jpg, .png, .jpeg" />
-        <button type="button" id="submitButton">Enviar a Flask</button>
+        <input type="file" id="fileInput" name="file" accept=".xml" />
+        <button type="button" id="submitButton">Procesar archivo</button>
     </form>
 
     <div id="response">
         <textarea id="responseText" rows="10" cols="50"></textarea>
-        <button type="button" id="getResponseButton">Obtener Respuesta de Flask</button>
+        <button type="button" id="getResponseButton">Obtener Mensajes</button>
     </div>
 
     <div id="response2">
         <textarea id="responseText2" rows="10" cols="50"></textarea>
-        <button type="button" id="getResponseButton2">Obtener Respuesta de Flask 2</button>
+        <button type="button" id="getResponseButton2">Obtener Sentimientos</button>
     </div>
     <a href="/myapp/pulpito">
         pulpito
 
     </a> 
-    <button type="button" id="mostrarImagenButton">Mostrar imagen Update</button>
-    <img src="{% static 'hola_aux.png' %}" id="imagenMostrada" width="600" height="300">
+    <button type="button" id="mostrarImagenButton">Mostrar piedad</button>
+    <img src="{% static 'hola_aux.png' %}" id="mostrar_imagen" width="600" height="300">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -67,7 +67,7 @@
             });
             $(document).ready(function(){
                 $("#mostrarImagenButton").click(function(){
-                    $("#imagenMostrada").toggle();
+                    $("#mostrar_imagen").toggle();
                 })
             })
         });
